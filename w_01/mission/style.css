@@ -13,6 +13,10 @@ h2 {
     line-height: 1.5;
     max-width: 600px;
     text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
 .title {
     text-align: center;
@@ -30,4 +34,11 @@ img {
 }
 .does-list {
     text-align: left;
+}
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: #A0D4ED;
 }
