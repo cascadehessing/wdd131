@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: black;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 0px;
+}
+
+.skiptocontent a {
+    position: absolute;
+    left: -9999px;
+    background-color: yellow;
+	/* set the element to absolute positioning */
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+}
+.skiptocontent a:focus {
+    left: 0;
+    transition: left 0.3s ease-in-out;
+	/* Move it back on when focused */
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+#menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4.5fr 1.5fr;
+}
+
+.book-entry-1, .book-entry-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+}
+
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    border-right: 3px solid black;
+}
+
+.book-details {
+    padding-left: 20px;
+}
+
+.title {
+    color: #4A6670;
+}
+
+img {
+    width: 250px;
+    padding: 3px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    padding: 10px;
+
+}
+
+.filters {
+    padding: 10px;
+    border-left: 3px solid black;
+
+}
