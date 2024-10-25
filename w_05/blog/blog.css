@@ -66,9 +66,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: top;
-    align-items: center;
-    padding: 10px;
+    text-align: right;
+    padding: 11px;
     border-right: 3px solid black;
+    line-height: 0.000000000000000001;
+}
+
+.date {
+    font-size: 1.1em;
 }
 
 .book-details {
@@ -80,7 +85,7 @@ main {
 }
 
 img {
-    width: 250px;
+    width: 220px;
     padding: 3px;
 }
 
@@ -97,6 +102,6 @@ img {
 
 .filters {
     padding: 10px;
-    border-left: 3px solid black;
+    border: 3px solid black;
 
 }
