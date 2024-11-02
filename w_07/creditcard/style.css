@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.card-form {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.card-front {
+    grid-template-columns: 2fr gap 1fr;
+    grid-template-rows: 1fr gap 1fr gap 1fr;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
+
+.card-back {
+    grid-template-columns: 2fr gap 1fr;
+    grid-template-rows: 1fr gap 1fr gap 1fr;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    top: 200px;
+    left: 0px;
+}
