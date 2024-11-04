@@ -42,7 +42,7 @@ body {
     grid-area: back;
     position: relative;
     z-index: 1;
-    top: -180px;
+    top: -180 px;
     left: 90px;
     background-color: #e2e2e2;
     width: 300px;
