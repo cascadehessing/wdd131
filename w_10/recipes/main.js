@@ -1,4 +1,4 @@
-import recipes from "recipes.mjs";
+import recipes from "./recipes.mjs";
 
 function random(num) {
     return Math.floor(Math.random() * num);
@@ -44,6 +44,13 @@ function renderRecipes(list) {
     recipesContainer.innerHTML = recipesHtml;
 }
 
+function filter(query) {
+	const filtered = recipes.filter(filterFunction)
+	// sort by name
+	const sorted = filtered.sort(sortFunction)
+		return sorted
+}
+
 function searchRecipes(event) {
     const searchTerm = event.target.value.toLowerCase();
     const filteredRecipes = recipes.filter(recipe => 
@@ -54,7 +61,8 @@ function searchRecipes(event) {
 }
 
 function init() {
-    const searchBar = document.querySelector("#search-bar");
+    console.log(recipes);
+    const searchBar = document.querySelector(".search-bar");
     searchBar.addEventListener("input", searchRecipes);
 
     const recipe = getRandomListEntry(recipes);
