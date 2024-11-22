@@ -42,11 +42,18 @@ header .logo h1 {
 }
 
 .search-bar button {
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    background-color: #e8e8e8;
+    transition: background-color 0.3s ease;
 }
+
+.search-bar button:hover {
+    background-color: #ccc;
+}
+
+.search-icon {
+    width: 20px;
+}
+
 
 main {
     display: flex;
@@ -100,46 +107,65 @@ footer {
 }
 
 .social-icons {
-    margin: 10px 0;
+    display: flex; /* Activate Flexbox */
+    flex-direction: row; /* Arrange icons in a row */
+    justify-content: center; /* Center-align the icons horizontally */
+    gap: 10px; /* Add space between icons */
+    padding: 10px 0; /* Optional: Add some padding for spacing */
 }
 
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    width: 40px;
+
+.social-icons a {
+    width: 30px;
+    height: auto;
+    display: block;
 }
 
 .logo-icon {
     width: 50px;
 }
 
-.search-icon {
-    width: 20px;
+.recipe-description {
+    display: none;
 }
 
-@media (min-width: 768px) {
-    main {display: flex;
+@media (min-width: 600px) {
+    main {
         flex-direction: row;
     }
-
     .recipe-card {
-        display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 600px;
         padding: 10px;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
+    main {
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        flex-wrap: wrap; /* Optional: Wrap items if needed */
+    }
+
     .recipe-card {
-        width: 400px;
+        display: flex; /* Make the recipe card a flex container */
+        flex-direction: row; /* Arrange items in a row */
+        width: 1200px;
+        align-items: flex-start; /* Align content vertically at the top */
+    }
+
+    .recipe-image {
+        width: 40%; /* Adjust image width as a percentage */
+        height: auto;
+    }
+
+    .recipe-info {
+        width: 60%; /* Adjust info width as a percentage */
+        padding: 20px; /* Add spacing inside the info section */
+        text-align: left; /* Align text to the left */
+    }
+
+    .recipe-description {
+        display: block; /* Ensure description is visible */
     }
 }
